@@ -7,8 +7,8 @@ import java.util.*;
 
 @Service
 public class MovieService {
-    @Autowired
-    MovieRepository movieRepository;
+//    @Autowired
+    MovieRepository movieRepository = new MovieRepository();
 
     public void addMovie(Movie movie){
         movieRepository.addMovie(movie);
